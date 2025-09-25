@@ -1,0 +1,139 @@
+.background {
+    background-color: #e0e0e0;
+}
+
+.header {
+    background-color: #03a1fc;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+}
+
+.body {
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.page2 {
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.header {
+    color: #ffffff;
+} 
+
+ul li a {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+ul li {
+    display: inline;
+    margin-right: 15px; 
+}
+
+ul {
+    list-style: none;      
+    display: flex;       
+    gap: 15px;              
+    padding: 0px 0px 10px 10px;
+}
+
+.header .content {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.header div ul {
+    list-style: none;
+}
+
+.header div li a {
+    text-decoration: none;
+}
+
+.AboutHTML .highlight {
+    background-color: #ffc285;
+    border-left: 6px solid orange;
+    color: #ff0000;
+    font-style: italic;
+}
+
+.AboutHTML p {
+    font-style: italic;
+}
+
+.AboutHTML .highlight b {
+    color: #ff0000;
+    font-style: italic;
+}
+
+button {
+    background-color: #03a1fc;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.ContactForm .sendBtn{
+    margin-top: 15px;
+    padding: 5px 0px 5px 0px;
+    background-color: #46e82a;
+    color: #ffffff;
+    border: none;
+    box-sizing: border-box;
+    width: 100%; 
+    border-radius: 2px;
+}
+
+input[type="text"] {
+    width: 100%;   
+    box-sizing: border-box; 
+    border-radius: 2px;
+    border: 1px solid grey;
+    padding: 6px;
+}
+
+table, th, td {
+    margin-top: 10px;
+    border: 2px solid #000000;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+.category {
+    background-color: #03a1fc;
+    text-align: left;
+}
+
+table tr th {
+    color: #ffffff;
+    padding: 5px 5px 5px 5px;
+}
+
+.copyright {
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+}
+
+.content1 {
+    text-align: left;
+    background-color: #9ad8f5;
+    padding: 6px;
+}
+
+.content2 {
+    text-align: left;
+    background-color: #e0e0e0;
+    padding: 6px;
+}
