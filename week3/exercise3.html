@@ -4,32 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate Area</title>
+    <title>Calculate Perimeter</title>
 </head>
 
 <body>
-    <form id="areaForm">
-        <label for="width">Input width:</label> </br>
-        <input type="text" id="width"> </br>
-        <label for="height">Input heigth:</label> </br>
-        <input type="text" id="height"> </br>
+    <form id="perimeterForm">
+        <label for="number1">Input the first number:</label> </br>
+        <input type="text" id="number1"> </br>
+        <label for="number2">Input the second number:</label> </br>
+        <input type="text" id="number2"> </br>
         <input type="submit" value="Calculate">
     </form>
 
-    <p id="areaOutput"></p>
+    <p id="perimeterOutput"></p>
 
     <script>
-        function calcArea(width, height) {
-            return width * height;
+        function calcPerimeter(number1, number2) {
+            return (number1 + number2) * 2;
         }
 
-        document.getElementById('areaForm').addEventListener('submit', function (event) {
+        document.getElementById('perimeterForm').addEventListener('submit', function (event) {
             event.preventDefault();
 
-            let width = parseFloat(document.getElementById('width').value);
-            let height = parseFloat(document.getElementById('height').value);
-            let area = calcArea(width, height);
-            document.getElementById('areaOutput').innerHTML += "Area: " + area;
+            let number1 = parseFloat(document.getElementById('number1').value);
+            let number2 = parseFloat(document.getElementById('number2').value);
+            let perimeter = calcPerimeter(number1, number2);
+            document.getElementById('perimeterOutput').innerHTML += "Perimeter: " + perimeter;
         });
     </script>
 </body>
