@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate BMI</title>
+    <title>Calculate Total Minute</title>
 </head>
+
 <body>
-    <form id="bmiForm">
-        <label for="weight">Input weight (kg):</label> </br>
-        <input type="text" id="weight"> </br>
-        <label for="height">Input heigth (m):</label> </br>
-        <input type="text" id="height"> </br>
+    <form id="minuteForm">
+        <label for="hour">Input the hour (24h):</label> </br>
+        <input type="text" id="hour"> </br>
+        <label for="minute">Input the minute:</label> </br>
+        <input type="text" id="minute"> </br>
         <input type="submit" value="Calculate">
     </form>
 
-    <p id="bmiOutput"></p>
+    <p id="minuteOutput"></p>
 
     <script>
-        function calcBMI(weight, height) {
-            return weight / (height * height);
+        function calcTotalMinute(hour, minute) {
+            return hour * 60 + minute;
         }
 
-        document.getElementById('bmiForm').addEventListener('submit', function(event) {
+        document.getElementById('minuteForm').addEventListener('submit', function (event) {
             event.preventDefault();
 
-            let weight = parseFloat(document.getElementById('weight').value);
-            let height = parseFloat(document.getElementById('height').value);
-            let bmi = calcBMI(weight, height);
-            document.getElementById('bmiOutput').innerHTML += "BMI: " + bmi;
+            let hour = parseFloat(document.getElementById('hour').value);
+            let minute = parseFloat(document.getElementById('minute').value);
+            let totalMinute = calcTotalMinute(hour, minute);
+            document.getElementById('minuteOutput').innerHTML += "Total minutes: " + totalMinute;
         });
     </script>
 </body>
+
 </html>
