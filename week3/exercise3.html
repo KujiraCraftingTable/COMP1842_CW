@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate Averange</title>
+    <title>Calculate BMI</title>
 </head>
 <body>
-    <form id="averageForm">
-        <label for="number1">Input the first number:</label> </br>
-        <input type="text" id="number1"> </br>
-        <label for="number2">Input the second number:</label> </br>
-        <input type="text" id="number2"> </br>
+    <form id="bmiForm">
+        <label for="weight">Input weight (kg):</label> </br>
+        <input type="text" id="weight"> </br>
+        <label for="height">Input heigth (m):</label> </br>
+        <input type="text" id="height"> </br>
         <input type="submit" value="Calculate">
     </form>
 
-    <p id="averageOutput"></p>
+    <p id="bmiOutput"></p>
 
     <script>
-        function calcAverage(number1, number2) {
-            return (number1 + number2) / 2;
+        function calcBMI(weight, height) {
+            return weight / (height * height);
         }
 
-        document.getElementById('averageForm').addEventListener('submit', function(event) {
+        document.getElementById('bmiForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
-            let number1 = parseFloat(document.getElementById('number1').value);
-            let number2 = parseFloat(document.getElementById('number2').value);
-            let average = calcAverage(number1, number2);
-            document.getElementById('averageOutput').innerHTML += "Average: " + average;
+            let weight = parseFloat(document.getElementById('weight').value);
+            let height = parseFloat(document.getElementById('height').value);
+            let bmi = calcBMI(weight, height);
+            document.getElementById('bmiOutput').innerHTML += "BMI: " + bmi;
         });
     </script>
 </body>
