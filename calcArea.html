@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculate Area</title>
 </head>
-
 <body>
     <form id="areaForm">
         <label for="width">Input width:</label> </br>
@@ -23,7 +21,7 @@
             return width * height;
         }
 
-        document.getElementById('areaForm').addEventListener('submit', function (event) {
+        document.getElementById('areaForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
             let width = parseFloat(document.getElementById('width').value);
@@ -33,5 +31,4 @@
         });
     </script>
 </body>
-
 </html>
